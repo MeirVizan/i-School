@@ -1,0 +1,191 @@
+{% extends "layout.html" %}
+{% block content %}
+<style>
+
+    .title-site{
+        padding-left: 225px;
+    }
+    .title-section {
+        text-align: center;
+    }
+.sectionDark {
+    background-color: #A9BDBB;
+    padding: 4rem
+}
+    .problem_case li{
+    font-size: 1.25em;
+}
+    .dot-title {
+    color: #bf5f50;
+}
+
+</style>
+
+    <section class="main-section">
+        <div class="overlay">
+        <div class="max-layout centerItems">
+            <div class="title-site">
+                <h1>Smart Attendance™</h1>
+                <p>Face Recognition system to reduce attendance time</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+<div class="container">
+
+    <section class="row">
+        <!--<div class="max-layout centerItems">-->
+            <div class="problem_case">
+                <h3 class="title-section"><span class="first-word-title"></span>The <span class="dot-title">Challenge</span>.</h3>
+                <ul>
+                    <li>Finding / Creating a Reliable Face Recognition Algorithm
+                        Face Recognition from a Limited Database of Data for Each Student</li>
+                    <li>Adding a new face and training the model without running on all existing faces</li>
+                    <li>Face recognition in non-optimal situations such as face tilted right,
+                        left, up, down and covered face parts</li>
+                </ul>
+            </div>
+        <!--</div>-->
+    </section>
+</div>
+
+<section class="sectionDark">
+    <div class="container"><!--<div class="max-layout centerItems">-->
+        <div>
+            <h3 class="title-section"><span class="first-word-title"></span>The <span class="dot-title">Solution</span>.</h3>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 context-solution">
+                    <p>
+                        SmartIdentification™ is an AI powered face recognition solution
+                        which uses Computer Vision and Machine
+                        Learning algorithms to mark the attendance of students in school.
+                    </p>
+                    <p>
+                        The system will work on face recognition where each student in the class will be photographed and
+                        their details will be stored in a server. The teacher can then record the attendance by
+                        just clicking some pictures of the classroom.
+                        The system will recognize the faces and verify the presence or absence of each student.
+                    </p>
+                </div>
+                <div class="col-lg-1">
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="img-solution">
+                        <img src="../static/frame_0_delay-s.jpg" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <section class="solution-section">
+        <!--<div class="max-layout centerItems">-->
+            <div>
+                <h3 class="title-section"><span class="first-word-title"></span>How it <span class="dot-title">Works</span>.</h3>
+                <div class="row">
+                    <div class="col-lg-5 col-md-10">
+                        <div class="img-solution">
+                            <img src="../static/b.jpg" >
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                    </div>
+                    <div class="col-lg-6 col-md-12 context-solution">
+                        <p>
+                            SmartIdentification™ is an AI powered face recognition solution
+                            which uses Computer Vision and Machine
+                            Learning algorithms to mark the attendance of the employees or students of the organisation.
+                        </p>
+                        <p>
+                           The system will work on face recognition where each student in the class will be photographed and
+                            their details will be stored in a server. The teacher can then record the attendance by
+                            just clicking some pictures of the classroom.
+                            The system will recognize the faces and verify the presence or absence of each student.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        <!--</div>-->
+        <div style="text-align: center" class="col-lg-12">
+        <a href="{{ url_for('main_page.about')}}" type="button" class="btn btn-outline-secondary">KNOW MORE</a>
+        </div>
+    </section>
+</div>
+<br><br>
+<section class="sectionDark">
+    <div class="container">
+        <h3 class="title-section"><span class="first-word-title"></span>The <span class="dot-title">Impact</span>.</h3>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12" style="margin-bottom: 20px">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <img style="margin: 15px 15px" src="https://img.icons8.com/pastel-glyph/64/000000/time.png"/>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9">
+                            <h5 class="card-title">Saves Time</h5>
+                            <p>With face recognition in place, students can’t mark proxy attendance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12" style="margin-bottom: 20px">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <img style="margin: 15px 15px" src="https://img.icons8.com/wired/64/000000/id-not-verified.png"/>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9">
+                            <h5 class="card-title">Reliability</h5>
+                            <p>With face recognition in place, students can’t mark proxy attendance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12" style="margin-bottom: 20px">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <img style="margin: 15px 15px" src="https://img.icons8.com/dotty/80/000000/time-management.png"/>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9">
+                            <h5 class="card-title">Increases productivity</h5>
+                            <p>With admin work taken care of, teachers and admins can focus on more productive work.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12" style="margin-bottom: 20px">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <img style="margin: 15px 15px" src="https://img.icons8.com/dotty/80/000000/error--v1.png"/>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9">
+                            <h5 class="card-title">Eliminate human error</h5>
+                            <p>Based on artificial intelligence, this system will completely eliminate any chances
+                                of human error.
+                                The system is equipped with state of the art face detection and recognition algorithms,
+                                making it completely foolproof.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<div class="container">
+<br><br><br>
+
+</div>
+
+
+{% endblock content %}

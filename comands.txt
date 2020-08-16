@@ -1,0 +1,24 @@
+extract_embeddings.py:
+python extract_embeddings.py --dataset dataset --embeddings output/embeddings.pickle --detector face_detection_model --embedding-model openface_nn4.small2.v1.t7
+
+train_model.py:
+python train_model.py --embeddings output/encodings.pickle --recognizer output/recognizer.pickle --le output/le.pickle
+python train_model.py --embeddings output/embeddings.pickle --recognizer output/recognizer.pickle --le output/le.pickle
+
+
+recognize.py:
+python recognize.py --detector face_detection_model --embedding-model openface_nn4.small2.v1.t7 --recognizer output/recognizer.pickle --le output/le.pickle --image images/image.jpg
+
+
+
+recognize_video.py:
+python recognize_video.py --detector face_detection_model --embedding-model openface_nn4.small2.v1.t7 --recognizer output/recognizer.pickle --le output/le.pickle
+
+
+
+align_faces:
+python align_faces.py  --shape-predictor shape_predictor_68_face_landmarks.dat  --image images/meir_josh.jpg
+
+dlib_embeddings:
+
+python dlib_embeddings.py --dataset dataset --encodings output/encodings.pickle

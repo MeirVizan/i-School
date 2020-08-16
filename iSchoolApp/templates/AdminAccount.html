@@ -1,0 +1,166 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<style>
+
+.multiselect {
+    width: 200px;
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#checkboxes {
+    display: none;
+    border: 1px #dadada solid;
+}
+
+#checkboxes label {
+    display: block;
+}
+
+#checkboxes label:hover {
+    background-color: #1e90ff;
+}
+
+#spin{
+    display: none;
+}
+</style>
+
+
+    <div class="container">
+
+        <hr>
+        <br>
+        <h3>Turn on/off the cameras of the school</h3>
+        <form action="/onOffCameras" method="post" enctype="multipart/form-data">
+            <button style="text-align: center" type="submit" class="btn btn-outline-secondary" name="button" value="1">ON</button>
+            <button style="text-align: center" type="submit" class="btn btn-outline-secondary" name="button" value="0">OFF</button>
+        </form>
+        
+
+        <br>
+        <hr>
+        <h3>Add a new teacher</h3>
+
+        <a href="/register" type="button" class="btn btn-outline-secondary">To Register</a><br>
+        <br>
+        <hr>
+
+         <br>
+        <h3>Add camera</h3>
+        <hr>
+        <form action="/registerCam" method="post" enctype="multipart/form-data">
+
+           Camera IP:<br>
+           <input type="text" name="IP"><br>
+           Class number:<br>
+           <input type="text" name="class"><br>
+            Status:<br>
+           <input type="text" name="status"><br>
+
+           <input type="submit" value="Upload"/>
+       </form>
+        <br>
+        <hr>
+        <h3>Add course</h3>
+        <form action="/addCourse" method="post" enctype="multipart/form-data">
+
+           Course name:<br>
+           <input type="text" name="name"><br>
+            Class number:<br>
+           <input type="number" name="classNum"><br>
+            Percentage of attendance:<br>
+           <input type="number" name="percentage"><br>
+           <input type="submit" value="Upload"/>
+       </form>
+        <hr>
+        <br>
+        <h3>Add a new student</h3>
+
+        <form action="/handleImageUpload" method="post" enctype="multipart/form-data">
+          <!-- Choose the file: <input type="file" name="photo"/><br>-->
+           <div class="custom-file">
+            <input type="file" style="width:50%" class="custom-file-input" name="photo" id="validatedCustomFile" required>
+            <label class="custom-file-label" for="validatedCustomFile">Choose student image...</label>
+           </div>
+           Enter Name Of Student:<br>
+           <input type="text" name="name"><br>
+           Enter ID Of Student:<br>
+           <input type="text" name="ID"><br>
+           <div class="multiselect">
+               <div class="selectBox" onclick="showCheckboxes()">
+                   <label>Choose_a_Courses:</label>
+                   <select>
+                       <option></option>
+                   </select>
+                   <div class="overSelect"></div>
+                   </div>
+               <div id="checkboxes">
+                   {% for crs in course_list %}
+                   <label>
+                       <input type="checkbox" value="{{crs.nameOfLecture}}" name="course[]" />{{crs.nameOfLecture}}</label>
+                   {% endfor %}
+               </div>
+           </div>
+            <br>
+           <input type="submit" value="Upload"/>
+       </form>
+        <br>
+        <hr>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+               <h3>Train the model</h3>
+                <button style="text-align: center" id="train_btn" type="button" class="btn btn-outline-secondary">Train</button>
+                <div id="spin" class="spinner-border text-secondary" role="status">
+                  <span class="sr-only">training...</span>
+                </div>
+            </div>
+        </div>
+        <hr><br>
+    </div>
+
+<script>
+
+    let $j = jQuery.noConflict();
+
+
+    document.getElementById("train_btn").onclick =  function() {
+        document.getElementById("spin").style.display = 'block';
+            $j.get('/train',
+            console.log("ok")
+            ).done(function () {
+                document.getElementById("spin").style.display = 'none';
+            })
+        };
+
+
+    var expanded = false;
+
+    function showCheckboxes() {
+      var checkboxes = document.getElementById("checkboxes");
+      if (!expanded) {
+        checkboxes.style.display = "block";
+        expanded = true;
+      } else {
+        checkboxes.style.display = "none";
+        expanded = false;
+      }
+    }
+</script>
+{% endblock content %}

@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<br>
+<br>
+    <div class="container">
+        <div class="row">
+            {% for cr in course_list %}
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">{{cr.nameOfLecture}}</h5>
+                    <p class="card-text">{{ current_user.username }}</p>
+                      <button style="text-align: center" name="courseIdStart" value="{{cr.id}}" class="btn btn-outline-info">Start class</button>
+                      <button style="text-align: center" name="courseIdEnd" value="{{cr.id}}" class="btn btn-outline-info">End class</button>
+                      <form action="/report" method="post">
+                      <button type="submit" style="text-align: center" name="courseIdReport" value="{{cr.id}}" class="btn btn-outline-info">Get report</button>
+                      </form>
+                  </div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+
+    <script>
+
+
+    async function execute_course(name,id) {
+
+            console.log("work execute_course");
+            const response = await fetch('/execute',
+                {
+                    method: 'POST',
+                    body: JSON.stringify({id, name }),
+                    headers: {'Content-Type': 'application/json'}
+                });
+
+    }
+
+
+    async function execute_report(name,id) {
+
+            console.log("work execute_report");
+            const response = await fetch('/report',
+                {
+                    method: 'GET',
+                    body: JSON.stringify({id, name }),
+                    headers: {'Content-Type': 'application/json'}
+                });
+
+    }
+
+
+
+
+    document.addEventListener('DOMContentLoaded', function(){
+                  $( "body" ).on( "click", ".card button", function() {
+                      let value = $(this).val();
+                      let name = $(this).attr("name");
+                      console.log(name);
+                      execute_course(name, value)
+
+                      /* if(name === "courseIdReport"){
+                        execute_report(name, value);
+                    }
+                    else {
+                    }*/
+
+                                });
+        });
+
+    </script>
+
+{% endblock content %}
