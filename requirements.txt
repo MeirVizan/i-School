@@ -1,5 +1,5 @@
+cv2==3.0.0
 
-opencv==3.4.2
 gunicorn==19.4.5
 appdirs==1.4.4
 astropy==3.2.1
