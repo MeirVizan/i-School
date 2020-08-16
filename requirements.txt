@@ -1,3 +1,4 @@
+cv2
 
 gunicorn==19.4.5
 appdirs==1.4.4
