@@ -218,6 +218,8 @@ def video_recognizer(detector, embedding_model, recognizer, le, confidence_arg=0
     print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
     # do a bit of cleanup
     cv2.destroyAllWindows()
+
     for v in vs:
         print("stop camera")
         v.stop()
+    print("hhhhhhhhhhhhhhhhhhhh")
