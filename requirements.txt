@@ -1,6 +1,6 @@
 opencv-python-headless==4.2.0.32
 opencv-contrib-python==4.1.0.25
-opencv==3.4.2
+opencv==3.4.1
 
 gunicorn==19.4.5
 appdirs==1.4.4
