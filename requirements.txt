@@ -1,6 +1,5 @@
 
 opencv-python-headless==4.2.0.32
-opencv-python==4.4.0.42
 gunicorn==19.4.5
 appdirs==1.4.4
 astropy==3.2.1

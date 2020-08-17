@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9cf50c80-32e5-4974-ab74-9e08ed35aa8d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iSchoolApp/recognize_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/iSchoolApp/recognize_video.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iSchoolApp/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/iSchoolApp/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +257,7 @@
       <workItem from="1597653859442" duration="11294000" />
       <workItem from="1597682199588" duration="10221000" />
       <workItem from="1597696915035" duration="7000" />
-      <workItem from="1597698531286" duration="925000" />
+      <workItem from="1597698531286" duration="2761000" />
     </task>
     <servers />
   </component>
