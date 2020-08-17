@@ -14,7 +14,8 @@ import cv2
 import os
 
 
-# ip = ip of current camera, stud_id= captured student, locateIP = list that holds the ips,
+# ip = ip of current cam
+# era, stud_id= captured student, locateIP = list that holds the ips,
 # dictsOfCapturedStuds = list of dictionaries
 def updateDictOfCapturedStuds(ip, stud_id, locateIP, dictsOfCapturedStuds, delete):
     index = locateIP.index(ip)
@@ -218,4 +219,5 @@ def video_recognizer(detector, embedding_model, recognizer, le, confidence_arg=0
     # do a bit of cleanup
     cv2.destroyAllWindows()
     for v in vs:
+        print("stop camera")
         v.stop()

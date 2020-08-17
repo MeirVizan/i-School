@@ -33,10 +33,12 @@
 }
         .title-site{
     padding-top: 290px;
-    padding-left: 30px;
+    padding-left: 225px;
     color: white;
 
 }
+
+
 .title-site h1{
   color: white;
     font-size: 52px;
@@ -88,6 +90,11 @@ max-width: 555px;
     height: 322px;
     object-fit: cover;
 }
+
+.sectionDark {
+    background-color: #A9BDBB;
+    padding: 4rem
+}
 @media (max-width: 1400px){
   .max-layout {
     max-width: 1170px;
@@ -104,7 +111,27 @@ max-width: 555px;
 @media (max-width: 768px){
   .max-layout {
     max-width: 738px;
-  }}
+  }
+    .img-solution img {
+        max-width: 100%;
+    }
+     .title-site {
+    padding-left: 15px;
+    padding-top: 210px;
+}
+    .sectionDark {
+    padding: 15px;
+}
+}
+
+@media (max-width: 572px){
+    .cardImpact{
+        text-align: center;
+    }
+  .max-layout {
+    max-width: 480px;
+  }
 
 
+}
 
