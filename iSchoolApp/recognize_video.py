@@ -99,9 +99,13 @@ def loopOverDetections(class_number, st, detections, frame, h, w, embedder, reco
 
 
 def isCameraAvailable(ip):
+    print("1")
     cap = cv2.VideoCapture(ip)
+    print("1.2")
+
     if cap is None or not cap.isOpened():
         return False
+    print("1.3")
     cap.release()
     return True
 
@@ -136,9 +140,13 @@ def video_recognizer(detector, embedding_model, recognizer, le, confidence_arg=0
 
         print(c)
         if isCameraAvailable(c.IP):
+            print("2")
             locateIP.append(c.IP)
+            print("3")
             dictsOfCapturedStuds.append(dict())
+            print("4")
             vs.append(WebcamVideoStream(src=c.IP).start())
+            print("5")
             detectors.append(cv2.dnn.readNetFromCaffe(protoPath, modelPath))
             print("vs:" + str(len(vs)) + "detector:" + str(len(detectors)))
 
