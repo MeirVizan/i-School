@@ -118,7 +118,7 @@ def video_recognizer(detector, embedding_model, recognizer, le, confidence_arg=0
     # load our serialized face embedding model from disk
     print("[INFO] loading face recognizer...")
     embedder = cv2.dnn.readNetFromTorch(embedding_model)
-
+    print("cv2")
     # load the actual face recognition model along with the label encoder
     recognizer = pickle.loads(open(recognizer, "rb").read())
     le = pickle.loads(open(le, "rb").read())
@@ -138,7 +138,7 @@ def video_recognizer(detector, embedding_model, recognizer, le, confidence_arg=0
         if isCameraAvailable(c.IP):
             locateIP.append(c.IP)
             dictsOfCapturedStuds.append(dict())
-            vs.append(VideoStream(src=c.IP).start())
+            vs.append(WebcamVideoStream(src=c.IP).start())
             detectors.append(cv2.dnn.readNetFromCaffe(protoPath, modelPath))
             print("vs:" + str(len(vs)) + "detector:" + str(len(detectors)))
 
