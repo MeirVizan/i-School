@@ -139,14 +139,10 @@ def video_recognizer(detector, embedding_model, recognizer, le, confidence_arg=0
     for c in cams:
 
         print(c)
-        if isCameraAvailable(c.IP+1):
-            print("2")
-            locateIP.append(c.IP+1)
-            print("3")
+        if isCameraAvailable(c.IP):
+            locateIP.append(c.IP)
             dictsOfCapturedStuds.append(dict())
-            print("4")
-            vs.append(WebcamVideoStream(src=c.IP+1).start())
-            print("5")
+            vs.append(VideoStream(src=c.IP).start())
             detectors.append(cv2.dnn.readNetFromCaffe(protoPath, modelPath))
             print("vs:" + str(len(vs)) + "detector:" + str(len(detectors)))
 

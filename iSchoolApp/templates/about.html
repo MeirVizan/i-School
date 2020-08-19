@@ -1,61 +1,32 @@
 {% extends "layout.html" %}
 {% block content %}
 
-<style>
-    .sectionDark {
-    background-color: #A9BDBB;
-    padding: 4rem
-}
-    .team_section{
-        background-color: #A9BDBB;
-    }
-    .img_team{
-        display: block;
-        margin: auto;
-        border-radius: 50%;
-        border: 3px solid #56c5d9;
-        max-width: 100%;
-    }
 
-    .team_name{
-        text-align: center;
-    }
-    .team{
-         display: block;
-    }
-    .dot-title {
-    color: #ff8370;
-}
-    .title-section {
-        text-align: center;
-    }
-</style>
-<h1 class="title-section"><span class="first-word-title"></span>About <span class="dot-title">Us</span>.</h1>
+<h1 class="title-section"><span class="first-word-title"></span>About The <span class="dot-title">System</span>.</h1>
 
-<section class="sectionDark">
+<section class="about_section">
     <div class="container">
 
+           <p>i-School is a face recognition based attendance system. For now uses the USB cameras connected to the
+           server's host, as a simulator of IP cameras that installed in the entrance of every
+           classroom and its exit. The system tracks the attendance percentage  of each student per lesson.
+           Each camera's IP  (now USB connection number) stored in db by admin permitted user, each camera in DB
+           has a column  'status' (exit\entry) and 'classroom number'.</p>
 
 
-            <p>The system will work on face recognition where each student in the class will be photographed and
-                        their details will be stored in a server of the school. The teacher make the attendance by he
-                        click on button "Start Attendance" and "End Attendance" depend the time of class .
-                        The system will recognize the faces and verify the face of each student in Two camera
-                one when the student get inside to class and second when they are get outside of the class .</p>
+        <p>The algorithms used for face recognition and face detection are of open-cv python library. Much of
+            the instructions were taken from <a href="https://www.pyimagesearch.com/2018/09/24/opencv-face-recognition/">
+            OpenCV Face Recognition by Adrian Rosebrock</a> including the face aligner algorithm <a href="https://www.pyimagesearch.com">
+            Pyimagesearch</a>The model for face detection is caffe model. <br>
+            Each student has a folder (within dataset folder)  on his name and ID number. The folder contains the
+            students facial images. The dataset should contain an unknown folder which should store the same amount
+            of unknown faces as the amount that stored in each known student directory.
+        </p>
 
-        <p>The system will work on face recognition where each student in the class will be photographed and
-                        their details will be stored in a server of the school. The teacher make the attendance by he
-                        click on button "Start Attendance" and "End Attendance" depend the time of class .
-                        The system will recognize the faces and verify the face of each student in Two camera
-                one when the student get inside to class and second when they are get outside of the class .</p>
-
-        <p>The system will work on face recognition where each student in the class will be photographed and
-                        their details will be stored in a server of the school. The teacher make the attendance by he
-                        click on button "Start Attendance" and "End Attendance" depend the time of class .
-                        The system will recognize the faces and verify the face of each student in Two camera
-                one when the student get inside to class and second when they are get outside of the class .</p>
-
-
+        <p>Attendance monitoring will be executed manually by the teacher, using start/end class button on
+           real time.Students are tracked as long as the cameras are on, regardless of an active class. The start/end
+           class is for counting the time of each student been attendant in the classroom along the lesson.
+        </p>
 
     </div>
 </section>
@@ -76,7 +47,6 @@
                         <h4 style="color: #de3116"><b>Hadassah College</b></h4>
                     </div>
                 </div>
-
             </div>
 
             <div class="col-lg-2 col-md-12">
@@ -101,11 +71,38 @@
             </div>
             <div class="col-lg-3 col-md-12"></div>
         </div>
+        <br>
     </div>
 
 
 <div class="container">
-<br><br><br>
+    <h4 class="title-section"><span class="first-word-title"> </span>Contact <span class="dot-title">Us</span>.</h4>
+</div>
+<div class="contact_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-12"></div>
+            <div class="col-lg-6 col-md-12">
+                <div class="icon-section">
+                    <div class="icon">
+                        <img src="../static/envelope.png">
+                        <b>: Meir15102@gmail.com | Joshua123ades@gmail.com</b>
+                    </div>
+                    <hr>
+                    <div class="icon">
+                        <img src="../static/linkedin.png">
+                        <b><a href="https://www.linkedin.com/in/meir-vizan-a1662814b/">Meir Vizan</a> | <a href="https://www.linkedin.com/in/joshua-ades-20467b145/">Joshua Ades</a></b>
+                    </div>
+                    <hr>
+                    <div class="icon">
+                        <img src="../static/github.png">
+                        <b><a href="https://github.com/MeirVizan"> github.com/MeirVizan</a> | <a href="https://github.com/MeirVizan"> github.com/JoshuaAdes</a></b>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12"></div>
+        </div>
+    </div>
 </div>
 
 {% endblock content %}

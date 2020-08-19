@@ -1,51 +1,11 @@
 {% extends "layout.html" %}
 {% block content %}
 
-<style>
-
-.multiselect {
-    width: 200px;
-}
-
-.selectBox {
-    position: relative;
-}
-
-.selectBox select {
-    width: 100%;
-    font-weight: bold;
-}
-
-.overSelect {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-
-#checkboxes {
-    display: none;
-    border: 1px #dadada solid;
-}
-
-#checkboxes label {
-    display: block;
-}
-
-#checkboxes label:hover {
-    background-color: #1e90ff;
-}
-
-#spin{
-    display: none;
-}
-</style>
 
 
     <div class="container">
+    <div class="line-section">
 
-        <hr>
         <br>
         <h3>Turn on/off the cameras of the school</h3>
         <form action="/onOffCameras" method="post" enctype="multipart/form-data">
@@ -64,7 +24,7 @@
 
          <br>
         <h3>Add camera</h3>
-        <hr>
+
         <form action="/registerCam" method="post" enctype="multipart/form-data">
 
            Camera IP:<br>
@@ -132,7 +92,8 @@
                 </div>
             </div>
         </div>
-        <hr><br>
+        <br>
+    </div>
     </div>
 
 <script>
