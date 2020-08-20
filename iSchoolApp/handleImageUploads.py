@@ -8,6 +8,11 @@ import extract_embeddings
 import train_model
 
 
+# adding student function we get the name of student and ID and course list
+# and we check if he not register in our system, we submit him to students table,
+# if the student is exist in our system of student, we check the list course
+# and if he not submit to course list we register him
+# else we go out the account page
 def newStudent(first_name, course_list, ID):
     lec_of_std = []
     size = 0
@@ -30,6 +35,11 @@ def newStudent(first_name, course_list, ID):
     db.session.commit()
 
 
+# In this func we get from client info about a new or not new student
+# "First Name", "ID", "Course List", "Photo",
+# we check if this student is not exist we create for him a new directory of image in dataset directory
+# and we make the "Train Model" on dataset directory
+# if this student is already exist we save his new image in his directory and make "Train Model"
 def handleImagesFileUpload():
     firstName = "Unknown"
     courseName = []

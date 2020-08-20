@@ -7,12 +7,14 @@
     <div class="line-section">
 
         <br>
+        <a href="{{ url_for('admin.logoutAdmin')}}" type="button" class="btn btn-outline-secondary">Logout</a>
+        <hr>
+
         <h3>Turn on/off the cameras of the school</h3>
         <form action="/onOffCameras" method="post" enctype="multipart/form-data">
             <button style="text-align: center" type="submit" class="btn btn-outline-secondary" name="button" value="1">ON</button>
             <button style="text-align: center" type="submit" class="btn btn-outline-secondary" name="button" value="0">OFF</button>
         </form>
-        
 
         <br>
         <hr>

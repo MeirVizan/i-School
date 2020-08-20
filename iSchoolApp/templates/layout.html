@@ -34,7 +34,7 @@
               <a class="nav-item nav-link" href="{{ url_for('main_page.about')}}">About</a>
               {% if current_user.is_authenticated %}
                 <a class="nav-item nav-link" href="{{ url_for('teacher.account')}}">Account</a>
-                <a class="nav-item nav-link" href="{{ url_for('teacher.logout')}}">Logout</a>
+                <a class="nav-item nav-link" href="{{ url_for('admin.loginAdminister')}}">Admin</a>
               {% else %}
                 <a class="nav-item nav-link" href="{{ url_for('teacher.login')}}">Teacher</a>
                 <a class="nav-item nav-link" href="{{ url_for('admin.loginAdminister')}}">Admin</a>

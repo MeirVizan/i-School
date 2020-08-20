@@ -9,22 +9,24 @@ from iSchoolApp.config import Config
 db = SQLAlchemy()
 # for a password (hash function)
 bcrypt = Bcrypt()
+
+# for login as Teacher or Admin
 login_manager = LoginManager()
 login_manager.login_view = 'teacher.login'
-login_manager.login_view = 'admin.loginAdminister'
 # get info about the login
 login_manager.login_message_category = 'info'
 
 
 def create_app(config_class=Config):
-    # for app server of flask
+    # initialize variable
     app = Flask(__name__)
     app.config.from_object(Config)
-
+    # database init
     db.init_app(app)
+    # Bcrypt init for hash
     bcrypt.init_app(app)
+    # login init for teacher
     login_manager.init_app(app)
-
     # getting access to routes by using Blueprint
     from iSchoolApp.main_page.routes import main_page
     from iSchoolApp.teacher.routes import teacher

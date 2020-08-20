@@ -89,7 +89,7 @@ def login():
                 return redirect(next_page)
             else:
                 print("2")
-                return redirect((url_for('main_page.home')))
+                return redirect((url_for('teacher.account')))
             # return redirect(next_page) if next_page else redirect((url_for('home')))
         else:
             flash('Login Unsuccessful. Please check email and password', 'danger')
