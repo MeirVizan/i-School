@@ -31,6 +31,7 @@
       <change beforePath="$PROJECT_DIR$/dataset/203077441_Joshua/photo_2020-06-24_18-53-30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/203077441_Joshua/photo_2020-06-24_18-53-30.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset/203077441_Joshua/photo_2020-08-09_21-14-27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/203077441_Joshua/photo_2020-08-09_21-14-27.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset/203077441_Joshua/photo_2020-08-09_21-14-49.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/203077441_Joshua/photo_2020-08-09_21-14-49.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/203077441_Joshua/photo_2020-08-09_21-15-25.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset/203077441_Joshua/photo_2020-08-09_21-15-36.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/203077441_Joshua/photo_2020-08-09_21-15-36.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/2.jpg" afterDir="false" />
@@ -44,14 +45,41 @@
       <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/9.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/IMG_7591.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/IMG_7591.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/IMG_7901.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/IMG_7901.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iSchoolApp/recognize_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/iSchoolApp/recognize_video.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iSchoolApp/static/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/iSchoolApp/static/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iSchoolApp/templates/AdminAccount.html" beforeDir="false" afterPath="$PROJECT_DIR$/iSchoolApp/templates/AdminAccount.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iSchoolApp/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/iSchoolApp/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iSchoolApp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/iSchoolApp/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iSchoolApp/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/iSchoolApp/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iSchoolApp/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/iSchoolApp/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iSchoolApp/templates/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/iSchoolApp/templates/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/IMG_E1891.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/IMG_E1902.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/meir.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/meir.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-01-06_18-06-01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-01-06_18-06-01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-01-06_18-07-32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-01-06_18-07-32.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-08_19-17-21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-08_19-17-21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-08_19-17-41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-08_19-17-41.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-24_18-53-39.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-24_18-53-39.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-24_18-53-51.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-24_18-53-51.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-24_18-53-58.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-24_18-53-58.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-24_18-54-05.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-24_18-54-05.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-24_18-54-11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-24_18-54-11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-24_18-54-22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-24_18-54-22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-24_18-54-30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-24_18-54-30.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-24_18-54-38.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-24_18-54-38.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-24_18-54-47.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-06-24_18-54-47.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-08-09_21-19-48.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-08-09_21-19-48.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-08-09_21-20-17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-08-09_21-20-17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-08-09_21-20-28.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-08-09_21-20-28.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-08-09_21-20-33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-08-09_21-20-33.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-08-09_21-21-30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-08-09_21-21-30.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-08-09_21-22-01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/302860788_Meir/photo_2020-08-09_21-22-01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/unknown/1200px-Donald_Trump_official_portrait.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/unknown/1200px-Donald_Trump_official_portrait.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/unknown/5d97a1004e140f1b3b22a9b6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/unknown/5d97a1004e140f1b3b22a9b6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/unknown/9601067.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/unknown/9601067.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/unknown/Benjamin_Netanyahu_2018.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/unknown/Benjamin_Netanyahu_2018.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/unknown/GettyImages-1206321276.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/unknown/GettyImages-1206321276.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/unknown/celebrities-who-surprisingly-dont-drink-alcohol-rm-brad-pitt-722x406.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/unknown/celebrities-who-surprisingly-dont-drink-alcohol-rm-brad-pitt-722x406.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/unknown/image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/unknown/image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/unknown/john-legend.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/unknown/john-legend.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/unknown/unnamed.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/unknown/unnamed.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iSchoolApp/site.db" beforeDir="false" afterPath="$PROJECT_DIR$/iSchoolApp/site.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iSchoolApp/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/iSchoolApp/templates/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/embeddings.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/output/embeddings.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/recognizer.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/output/recognizer.pickle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -306,7 +334,7 @@
       <workItem from="1597653859442" duration="11294000" />
       <workItem from="1597682199588" duration="10221000" />
       <workItem from="1597696915035" duration="7000" />
-      <workItem from="1597698531286" duration="30596000" />
+      <workItem from="1597698531286" duration="33200000" />
     </task>
     <servers />
   </component>
@@ -344,35 +372,35 @@
     <state x="-1180" y="-45" key="FileChooserDialogImpl/0.0.1366.728/-1920.-306.1920.1040@-1920.-306.1920.1040" timestamp="1597653687177" />
     <state x="526" y="183" key="FileChooserDialogImpl/0.0.1366.728/-1920.-306.1920.1040@0.0.1366.728" timestamp="1597330680377" />
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594115209788" />
-    <state width="1877" height="253" key="GridCell.Tab.0.bottom" timestamp="1597869514086">
+    <state width="1877" height="253" key="GridCell.Tab.0.bottom" timestamp="1597880579350">
       <screen x="-1920" y="-306" width="1920" height="1040" />
     </state>
     <state width="1877" height="356" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-304.1920.1040@-1920.-304.1920.1040" timestamp="1593104183704" />
-    <state width="1877" height="253" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-306.1920.1040@-1920.-306.1920.1040" timestamp="1597869514086" />
+    <state width="1877" height="253" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-306.1920.1040@-1920.-306.1920.1040" timestamp="1597880579350" />
     <state width="1323" height="152" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-306.1920.1040@0.0.1366.728" timestamp="1597267599454" />
     <state width="1323" height="304" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597748928434" />
     <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597065639712" />
-    <state width="1877" height="253" key="GridCell.Tab.0.center" timestamp="1597869514086">
+    <state width="1877" height="253" key="GridCell.Tab.0.center" timestamp="1597880579350">
       <screen x="-1920" y="-306" width="1920" height="1040" />
     </state>
     <state width="1877" height="356" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-304.1920.1040@-1920.-304.1920.1040" timestamp="1593104183704" />
-    <state width="1877" height="253" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-306.1920.1040@-1920.-306.1920.1040" timestamp="1597869514086" />
+    <state width="1877" height="253" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-306.1920.1040@-1920.-306.1920.1040" timestamp="1597880579350" />
     <state width="1323" height="152" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-306.1920.1040@0.0.1366.728" timestamp="1597267599453" />
     <state width="1323" height="304" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597748928434" />
     <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597065639712" />
-    <state width="1877" height="253" key="GridCell.Tab.0.left" timestamp="1597869514085">
+    <state width="1877" height="253" key="GridCell.Tab.0.left" timestamp="1597880579350">
       <screen x="-1920" y="-306" width="1920" height="1040" />
     </state>
     <state width="1877" height="356" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-304.1920.1040@-1920.-304.1920.1040" timestamp="1593104183704" />
-    <state width="1877" height="253" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-306.1920.1040@-1920.-306.1920.1040" timestamp="1597869514085" />
+    <state width="1877" height="253" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-306.1920.1040@-1920.-306.1920.1040" timestamp="1597880579350" />
     <state width="1323" height="152" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-306.1920.1040@0.0.1366.728" timestamp="1597267599453" />
     <state width="1323" height="304" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597748928434" />
     <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597065639712" />
-    <state width="1877" height="253" key="GridCell.Tab.0.right" timestamp="1597869514086">
+    <state width="1877" height="253" key="GridCell.Tab.0.right" timestamp="1597880579350">
       <screen x="-1920" y="-306" width="1920" height="1040" />
     </state>
     <state width="1877" height="356" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-304.1920.1040@-1920.-304.1920.1040" timestamp="1593104183704" />
-    <state width="1877" height="253" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-306.1920.1040@-1920.-306.1920.1040" timestamp="1597869514086" />
+    <state width="1877" height="253" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-306.1920.1040@-1920.-306.1920.1040" timestamp="1597880579350" />
     <state width="1323" height="152" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-306.1920.1040@0.0.1366.728" timestamp="1597267599454" />
     <state width="1323" height="304" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597748928434" />
     <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597065639712" />
@@ -447,6 +475,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/iSchool_1$recognize.coverage" NAME="recognize Coverage Results" MODIFIED="1584373232639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/iSchool_1$run.coverage" NAME="run Coverage Results" MODIFIED="1597869514076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/iSchool_1$run.coverage" NAME="run Coverage Results" MODIFIED="1597880579209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
