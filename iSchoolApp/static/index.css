@@ -72,8 +72,8 @@ body{
 }
 
 .row{
-  display: flex;
-  flex-direction: row;
+  /*display: flex;*/
+  /*flex-direction: row;*/
 }
 .context-solution{
   padding-right: 40px;

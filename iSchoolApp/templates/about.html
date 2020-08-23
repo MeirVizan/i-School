@@ -7,26 +7,26 @@
 <section class="about_section">
     <div class="container">
 
-           <p>i-School is a face recognition based attendance system. For now uses the USB cameras connected to the
-           server's host, as a simulator of IP cameras that installed in the entrance of every
-           classroom and its exit. The system tracks the attendance percentage  of each student per lesson.
-           Each camera's IP  (now USB connection number) stored in db by admin permitted user, each camera in DB
-           has a column  'status' (exit\entry) and 'classroom number'.</p>
+           <p>i-School is a face recognition based attendance system. It presently uses USB cameras connected to the
+            server's host, as a simulator of IP cameras that are installed in the entrance and exit of every classroom.
+            The system tracks the attendance percentage of each student per lesson. Each camera's IP (now USB connection
+            number) is stored in DB by an admin-permitted user. Each camera in DB has a column 'status' (exit\entry)
+            and 'classroom number'.</p>
 
 
-        <p>The algorithms used for face recognition and face detection are of open-cv python library. Much of
-            the instructions were taken from <a href="https://www.pyimagesearch.com/2018/09/24/opencv-face-recognition/">
-            OpenCV Face Recognition by Adrian Rosebrock</a> including the face aligner algorithm <a href="https://www.pyimagesearch.com">
-            Pyimagesearch</a>The model for face detection is caffe model. <br>
-            Each student has a folder (within dataset folder)  on his name and ID number. The folder contains the
-            students facial images. The dataset should contain an unknown folder which should store the same amount
-            of unknown faces as the amount that stored in each known student directory.
-        </p>
+        <p>The algorithms used for face recognition and face detection are from the open-cv python library. Much  of the
+        instructions and code were taken from <a href="https://www.pyimagesearch.com/2018/09/24/opencv-face-recognition/">
+            OpenCV Face Recognition by Adrian Rosebrock</a> including the face aligner algorithm which its entire code
+            were taken from  <a href="https://www.pyimagesearch.com"> Pyimagesearch</a> The model for face detection is
+            caffe model. <br>
+        Each student has a folder (within a dataset folder) that gets the name of  his name and ID number. The folder
+            contains the student's facial images. The dataset should contain an unknown folder which stores the same
+            amount of unknown faces as
+            the amount that is stored in each known student directory.</p>
 
-        <p>Attendance monitoring will be executed manually by the teacher, using start/end class button on
-           real time.Students are tracked as long as the cameras are on, regardless of an active class. The start/end
-           class is for counting the time of each student been attendant in the classroom along the lesson.
-        </p>
+        <p>Attendance monitoring will be executed manually by the teacher, using a start/end class button in real time.
+            Students are tracked as long as the cameras are on, regardless of an active class. The start/end class is
+            for tracking the time each student has been present in the classroom during the lesson. </p>
 
     </div>
 </section>
