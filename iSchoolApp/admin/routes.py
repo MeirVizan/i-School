@@ -1,5 +1,5 @@
 # import stuff of flask
-from flask import render_template, request, redirect, url_for, flash, send_file, Blueprint
+from flask import render_template, request, redirect, url_for, flash, send_file, Blueprint, session
 
 # getting access to application in app folder and to database and to bcrypt of password
 from flask_login import login_required
@@ -32,7 +32,8 @@ def loginAdminister():
         # check if email and password ok
         # if admin and bcrypt.check_password_hash(admin.password, form.password.data):
         if admin and admin.password == form.password.data:
-            os.environ['ADMIN'] = 'in'
+            session['admin'] = form.email.data
+            # os.environ['ADMIN'] = 'in'
             return redirect(url_for('admin.AdminAccount'))
         else:
             flash('Login Unsuccessful. Please check email and password', 'danger')
@@ -41,19 +42,19 @@ def loginAdminister():
 
 @admin.route("/logoutAdmin")
 def logoutAdmin():
-    os.environ['ADMIN'] = 'out'
-    print(os.environ.get('ADMIN'))
+    # os.environ['ADMIN'] = 'out'
+    session.pop('admin', None)
     print("bla bla bla")
     return redirect(url_for('main_page.home'))
 
 
 @admin.route("/AdminAccount", methods=['GET'])
 def AdminAccount():
-    print(os.environ.get('ADMIN'))
-    if os.environ.get('ADMIN') != 'in':
-        return redirect(url_for('admin.loginAdminister'))
-    course_list = Lecture.query.all()
-    return render_template('AdminAccount.html', course_list=course_list)
+    if 'admin' in session:
+        course_list = Lecture.query.all()
+        return render_template('AdminAccount.html', course_list=course_list)
+    return redirect(url_for('admin.loginAdminister'))
+
 
 
 @admin.route("/onOffCameras", methods=["POST"])

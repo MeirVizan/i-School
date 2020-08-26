@@ -39,8 +39,8 @@ def getListOfCourseAvailable(listOfCourses):
 # Handler in register users
 @teacher.route("/register", methods=['GET', 'POST'])
 def register():
-    if current_user.is_authenticated:
-        return redirect(url_for('main_page.home'))
+    #if current_user.is_authenticated:
+    #    return redirect(url_for('main_page.home'))
     form = RegistrationForm()
     if form.validate_on_submit():
         # hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
@@ -181,10 +181,12 @@ def report():
     print("=====")
 
     lec = Lecture.query.filter_by(id=courseId).first()
+    c_name = lec.nameOfLecture
     rep = Report.query.filter_by(course_id=courseId).first()
     list_of_dates = rep.course_date
     std_list_of_lecture = lec.students
-    return render_template('report.html', list_of_dates=list_of_dates, std_list_of_lecture=std_list_of_lecture)
+    return render_template('report.html', list_of_dates=list_of_dates, std_list_of_lecture=std_list_of_lecture,
+                           c_name=c_name, courseId=courseId)
 
 
 def getLenClass(start, end):

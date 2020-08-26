@@ -36,7 +36,7 @@
             Status:<br>
            <input type="text" name="status"><br>
 
-           <input type="submit" value="Upload"/>
+           <input type="submit" value="Upload" class="btn btn-outline-secondary"/>
        </form>
         <br>
         <hr>
@@ -49,7 +49,7 @@
            <input type="number" name="classNum"><br>
             Percentage of attendance:<br>
            <input type="number" name="percentage"><br>
-           <input type="submit" value="Upload"/>
+           <input type="submit" value="Upload" class="btn btn-outline-secondary"/>
        </form>
         <hr>
         <br>
@@ -59,15 +59,15 @@
           <!-- Choose the file: <input type="file" name="photo"/><br>-->
            <div class="form-group">
             <label for="exampleFormControlFile1">Choose student image...</label>
-            <input type="file" style="width:50%" class="form-control-file" name="photo" id="exampleFormControlFile1" required>
+            <input type="file" style="width:50%" class="form-control-file" name="photo" id="exampleFormControlFile1">
            </div>
            Enter Name Of Student:<br>
-           <input type="text" name="name"><br>
+           <input type="text" name="name" required><br>
            Enter ID Of Student:<br>
-           <input type="text" name="ID"><br>
+           <input type="text" name="ID" required><br>
            <div class="multiselect">
                <div class="selectBox" onclick="showCheckboxes()">
-                   <label>Choose_a_Courses:</label>
+                   <label>Choose courses:</label>
                    <select>
                        <option></option>
                    </select>
@@ -76,12 +76,12 @@
                <div id="checkboxes">
                    {% for crs in course_list %}
                    <label>
-                       <input type="checkbox" value="{{crs.nameOfLecture}}" name="course[]" />{{crs.nameOfLecture}}</label>
+                       <input type="checkbox" value="{{crs.nameOfLecture}}" name="course[]" />{{crs.nameOfLecture}} - {{crs.id}}</label>
                    {% endfor %}
                </div>
            </div>
             <br>
-           <input type="submit" value="Upload"/>
+           <input type="submit" value="Upload" class="btn btn-outline-secondary"/>
        </form>
         <br>
         <hr>

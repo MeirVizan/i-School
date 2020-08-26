@@ -74,7 +74,7 @@
 
                 <div class="multiselect">
                     <div class="selectBox" onclick="showCheckboxes()">
-                      <label>Choose_a_Courses:</label>
+                      <label>Choose courses:</label>
                       <select>
                         <option></option>
                       </select>
@@ -83,7 +83,7 @@
                     <div id="checkboxes">
                         {% for crs in course_list %}
                         <label>
-                            <input type="checkbox" value="{{crs.nameOfLecture}}" name="course[]" />{{crs.nameOfLecture}}</label>
+                            <input type="checkbox" value="{{crs.nameOfLecture}}" name="course[]" />{{crs.nameOfLecture}} - {{crs.id}}</label>
                         {% endfor %}
                     </div>
                 </div>
