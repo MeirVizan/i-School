@@ -238,6 +238,21 @@ footer{
 }
 
 
+
+#checkboxes_2 {
+    display: none;
+    border: 1px #dadada solid;
+}
+
+#checkboxes_2 label {
+    display: block;
+}
+
+#checkboxes_2 label:hover {
+    background-color: #1e90ff;
+}
+
+
 .btn-teacher{
     margin: 5px;
 }

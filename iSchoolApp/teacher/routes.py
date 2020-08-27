@@ -43,13 +43,13 @@ def register():
     #    return redirect(url_for('main_page.home'))
     form = RegistrationForm()
     if form.validate_on_submit():
-        # hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
-        # user = User(username=form.username.data, email=form.email.data, password=hashed_password)
-        user = User(username=form.username.data, email=form.email.data, password=form.password.data)
+        hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
+        user = User(username=form.username.data, email=form.email.data, password=hashed_password)
+        # user = User(username=form.username.data, email=form.email.data, password=form.password.data)
         # get a connection to save data in database
         db.session.add(user)
         # save data in database
-        # db.session.commit()
+        db.session.commit()
         courses = request.form.getlist("course[]")
         if courses:
             for cou in courses:
@@ -79,8 +79,8 @@ def login():
     if form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()
         # check if email and password ok
-        # if user and bcrypt.check_password_hash(user.password, form.password.data):
-        if user and user.password == form.password.data:
+        if user and bcrypt.check_password_hash(user.password, form.password.data):
+        # if user and user.password == form.password.data:
             login_user(user, remember=form.remember.data)
             # if the user try to get to account and he logout so when he will be login he get the page
             next_page = request.args.get('next')

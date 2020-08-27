@@ -6,7 +6,6 @@ from flask_login import login_required
 
 from iSchoolApp import db, handleImageUploads, recognize_video, bcrypt
 
-
 # import form of register and login from app folder
 from iSchoolApp.admin.forms import AdministerLogin
 
@@ -19,7 +18,6 @@ import train_model
 from iSchoolApp.registerCam import registerCamFunc
 from iSchoolApp.addCourse import addCourseFunc
 
-
 admin = Blueprint('admin', __name__)
 
 
@@ -31,7 +29,7 @@ def loginAdminister():
         admin = Administer.query.filter_by(email=form.email.data).first()
         # check if email and password ok
         # if admin and bcrypt.check_password_hash(admin.password, form.password.data):
-        if admin and admin.password == form.password.data:
+        if admin and bcrypt.check_password_hash(admin.password, form.password.data):
             session['admin'] = form.email.data
             # os.environ['ADMIN'] = 'in'
             return redirect(url_for('admin.AdminAccount'))
@@ -54,7 +52,6 @@ def AdminAccount():
         course_list = Lecture.query.all()
         return render_template('AdminAccount.html', course_list=course_list)
     return redirect(url_for('admin.loginAdminister'))
-
 
 
 @admin.route("/onOffCameras", methods=["POST"])
@@ -105,4 +102,27 @@ def addCourse():
         flash('Course is already created. Please choice a different course', 'danger')
     else:
         addCourseFunc(course_name, class_number, per)
+    return redirect((url_for('admin.AdminAccount')))
+
+
+@admin.route("/addCourseToTeacher", methods=['POST'])
+def addCourseToTeacher():
+    teacher_name = request.form.get("teacher_name")
+    teacher_id = request.form.get("teacher_id")
+
+    user = User.query.filter_by(id=teacher_id).first()
+    courses = request.form.getlist("course[]")
+    message = ""
+    if courses:
+        for cou in courses:
+            print(user.get_id())
+            c = Lecture.query.filter_by(nameOfLecture=cou).first()
+            if c.user_id is None:
+                c.user_id = user.get_id()
+                db.session.commit()
+                message += cou + " "
+    if message != "":
+        flash(message + 'successfully added!', 'success')
+    else:
+        flash('all the courses is already used ', 'danger')
     return redirect((url_for('admin.AdminAccount')))

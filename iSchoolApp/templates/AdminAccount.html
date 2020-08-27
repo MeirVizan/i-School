@@ -52,8 +52,38 @@
            <input type="submit" value="Upload" class="btn btn-outline-secondary"/>
        </form>
         <hr>
+
+
         <br>
-        <h3>Add a new student</h3>
+        <h3>Add courses to teacher</h3>
+        <form action="/addCourseToTeacher" method="post" enctype="multipart/form-data">
+            Teacher name:<br>
+            <input type="text" name="teacher_name" required><br>
+            Teacher id:<br>
+            <input type="text" name="teacher_id" required><br>
+
+           <div class="multiselect">
+               <div class="selectBox" onclick="showCheckboxes_2()">
+                   <label>Choose courses:</label>
+                   <select>
+                       <option></option>
+                   </select>
+                   <div class="overSelect"></div>
+                   </div>
+               <div id="checkboxes_2">
+                   {% for crs in course_list %}
+                   <label>
+                       <input type="checkbox" value="{{crs.nameOfLecture}}" name="course[]" />{{crs.nameOfLecture}} - {{crs.id}}</label>
+                   {% endfor %}
+               </div>
+           </div>
+            <input type="submit" value="Upload" class="btn btn-outline-secondary"/>
+        </form>
+
+
+        <hr>
+        <br>
+        <h3>Add and modify student </h3>
 
         <form action="/handleImageUpload" method="post" enctype="multipart/form-data">
           <!-- Choose the file: <input type="file" name="photo"/><br>-->
@@ -113,16 +143,30 @@
         };
 
 
-    var expanded = false;
+    var expanded_1 = false;
 
     function showCheckboxes() {
-      var checkboxes = document.getElementById("checkboxes");
-      if (!expanded) {
-        checkboxes.style.display = "block";
-        expanded = true;
+      var checkboxes_1 = document.getElementById("checkboxes");
+      if (!expanded_1) {
+        checkboxes_1.style.display = "block";
+        expanded_1 = true;
       } else {
-        checkboxes.style.display = "none";
-        expanded = false;
+        checkboxes_1.style.display = "none";
+        expanded_1 = false;
+      }
+    }
+
+
+    var expanded_2 = false;
+
+    function showCheckboxes_2() {
+      var checkboxes_2 = document.getElementById("checkboxes_2");
+      if (!expanded_2) {
+        checkboxes_2.style.display = "block";
+        expanded_2 = true;
+      } else {
+        checkboxes_2.style.display = "none";
+        expanded_2 = false;
       }
     }
 </script>

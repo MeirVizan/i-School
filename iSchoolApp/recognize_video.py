@@ -146,7 +146,6 @@ def video_recognizer(detector, embedding_model, recognizer, le, confidence_arg=0
             detectors.append(cv2.dnn.readNetFromCaffe(protoPath, modelPath))
             print("vs:" + str(len(vs)) + "detector:" + str(len(detectors)))
 
-    print("hhhhh")
 
     time.sleep(2.0)
 
