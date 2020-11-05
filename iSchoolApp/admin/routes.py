@@ -40,9 +40,7 @@ def loginAdminister():
 
 @admin.route("/logoutAdmin")
 def logoutAdmin():
-    # os.environ['ADMIN'] = 'out'
     session.pop('admin', None)
-    print("bla bla bla")
     return redirect(url_for('main_page.home'))
 
 

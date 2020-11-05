@@ -223,6 +223,4 @@ def video_recognizer(detector, embedding_model, recognizer, le, confidence_arg=0
     cv2.destroyAllWindows()
 
     for v in vs:
-        print("stop camera")
         v.stop()
-    print("hhhhhhhhhhhhhhhhhhhh")
